@@ -45,7 +45,7 @@ export default function HomePage() {
         <h1 className="font-heading text-4xl font-bold leading-tight tracking-tight text-balance sm:text-6xl lg:text-7xl">
           Hi, I&apos;m Schann Alves.
           <br />
-          <span className="text-primary">Aspiring Web developer // Data analyst</span>
+          <span className="text-primary">Aspiring Web developer && Data analyst</span>
           <br />
           <p>
             I build things for fun, and I thrive on learning new technologies.
