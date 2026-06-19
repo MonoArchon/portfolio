@@ -46,6 +46,10 @@ export default function HomePage() {
           Hi, I&apos;m Schann Alves.
           <br />
           <span className="text-primary">Aspiring Web developer // Data analyst</span>
+          <br />
+          <p>
+            I build things for fun, and I thrive on learning new technologies.
+          </p>
         </h1>
         <div className="flex flex-wrap items-center gap-3 pt-2">
           <Link
