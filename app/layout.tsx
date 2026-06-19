@@ -16,7 +16,7 @@ const spaceGrotesk = Space_Grotesk({
 })
 
 export const metadata: Metadata = {
-  title: 'Schann Alves — Full-Stack Developer',
+  title: 'Schann Alves',
   description:
     'Portfolio of Schann Alves, a full-stack developer building fast, reliable web applications. Explore my story, tech stack, projects, and certifications.',
   generator: 'v0.app',
