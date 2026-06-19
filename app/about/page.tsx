@@ -38,7 +38,7 @@ export default function AboutPage() {
     <div className="mx-auto max-w-6xl px-6 py-16">
       <PageHeader
         eyebrow="About Me"
-        title="Engineer, problem solver, lifelong learner."
+        title="Problem solver, lifelong learner."
       />
 
       <div className="mt-12 grid gap-12 lg:grid-cols-[280px_1fr]">
