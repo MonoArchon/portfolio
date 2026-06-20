@@ -30,7 +30,7 @@ export function SiteNav() {
             <Terminal className="size-4" aria-hidden="true" />
           </span>
           <span>
-            schann<span className="text-primary">.dev</span>
+            Schann<span className="text-primary">Alves</span>
           </span>
         </Link>
 
