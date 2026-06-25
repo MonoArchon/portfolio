@@ -12,7 +12,7 @@ const categories = [
   {
     icon: Code2,
     title: 'Languages',
-    items: ['TypeScript', 'JavaScript', 'Python', 'PHP', 'SQL', 'Java', 'HTML & CSS'],
+    items: ['JavaScript', 'Python', 'PHP', 'SQL', 'Java', 'HTML & CSS'],
   },
   {
     icon: Layers,

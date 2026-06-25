@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Menu, X, Terminal } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
@@ -17,6 +17,22 @@ const links = [
 export function SiteNav() {
   const pathname = usePathname()
   const [open, setOpen] = useState(false)
+  const [hidden, setHidden] = useState(false)
+  const lastScrollY = useRef(0)
+
+  useEffect(() => {
+    const onScroll = () => {
+      const currentScrollY = window.scrollY
+      const isScrollingDown = currentScrollY > lastScrollY.current
+      const shouldHide = isScrollingDown && currentScrollY > 80
+
+      setHidden(shouldHide)
+      lastScrollY.current = currentScrollY
+    }
+
+    window.addEventListener("scroll", onScroll, { passive: true })
+    return () => window.removeEventListener("scroll", onScroll)
+  }, [])
 
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
